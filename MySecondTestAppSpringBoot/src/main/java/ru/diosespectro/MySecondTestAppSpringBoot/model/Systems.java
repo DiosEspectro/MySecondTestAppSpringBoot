@@ -3,9 +3,11 @@ package ru.diosespectro.MySecondTestAppSpringBoot.model;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum Systems {
+    EMPTY (""),
     ERP ("Enterprise Resource Planning"),
     CRM ("Customer Relationship Management"),
-    WMS ("Warehouse Management System");
+    WMS ("Warehouse Management System"),
+    S1 ("Service 1");
 
     private final String name;
 
