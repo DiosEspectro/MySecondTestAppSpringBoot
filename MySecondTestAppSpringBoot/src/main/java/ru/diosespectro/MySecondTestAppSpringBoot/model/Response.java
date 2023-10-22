@@ -10,6 +10,7 @@ public class Response {
     private String operationUid; // Уникальный идентификатор операции
     private String systemTime; // Время создания сообщения
     private Codes code; // Код ошибки
+    private Double annualBonus; // Годовая премия
     private ErrorCodes errorCode; // Расшифровка кода
     private ErrorMessages errorMessage; // Сообщение об ошибке
 
@@ -20,6 +21,7 @@ public class Response {
                 ", operationUid='" + operationUid + '\'' +
                 ", systemTime='" + systemTime + '\'' +
                 ", code='" + code + '\'' +
+                ", annualBonus='" + annualBonus + '\'' +
                 ", errorCode='" + errorCode + '\'' +
                 ", errorMessage='" + errorMessage + '\'' +
                 '}';
