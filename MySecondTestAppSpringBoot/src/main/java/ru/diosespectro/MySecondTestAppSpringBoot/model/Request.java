@@ -16,26 +16,30 @@ import javax.validation.constraints.NotBlank;
 public class Request {
 
     @NotBlank(message = "Поле uid не заполнено")
-    private String uid;
+    private String uid; // Уникальный идентификатор сообщение
 
     @NotBlank(message = "Поле operationUid не заполнено")
-    private String operationUid;
+    private String operationUid; // Уникальный идентификатор операции
 
-
-    private Systems systemName;
+    private Systems systemName; // Имя системы отправителя
 
     @NotBlank(message = "Поле systemTime не заполнено")
-    private String systemTime;
+    private String systemTime; // Время создания сообщения
 
-    private String source;
+    private String source; // Наименование ресурса
+
+    private Positions position; // Должность
+    private Double salary; // Зарплата
+    private Double bonus; // Коэффициент
+    private Integer workDays; // Рабочие дни
 
     @Min(value = 1, message = "Значение communicationId не должно быть меньше 1")
     @Max(value = 100000, message = "Значение communicationId не должно быть больше 100000")
-    private int communicationId;
+    private int communicationId; // Уникальный идентификатор коммуникации
 
-    private int templateId;
-    private int productCode;
-    private int smsCode;
+    private int templateId; // Уникальный идентификатор шаблона
+    private int productCode; // Код продукта
+    private int smsCode; // Смс код
 
     @Override
     public String toString() {
